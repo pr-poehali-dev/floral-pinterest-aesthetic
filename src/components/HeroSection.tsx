@@ -1,5 +1,4 @@
-
-import { Button } from "@/components/ui/button";
+import AnimatedButton from "./AnimatedButton";
 
 const HeroSection = () => {
   return (
@@ -7,23 +6,16 @@ const HeroSection = () => {
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12">
         <div className="max-w-lg">
           <h1 className="font-playfair text-4xl md:text-6xl font-bold mb-6 text-[#403E43] leading-tight animate-fade-in">
-            Цветы, которые{" "}
-            <span className="text-[#5A3825]">рассказывают</span> историю
+            Цветы, которые <span className="text-[#5A3825]">рассказывают</span>{" "}
+            историю
           </h1>
           <p className="text-[#8A898C] mb-8 text-lg animate-fade-in">
             Наши букеты — это не просто цветы, а произведения искусства,
             созданные с любовью и вниманием к деталям.
           </p>
           <div className="flex gap-4 animate-fade-in">
-            <Button className="bg-[#5A3825] hover:bg-[#44291b] text-white rounded-full px-6">
-              Выбрать букет
-            </Button>
-            <Button
-              variant="outline"
-              className="border-[#5A3825] text-[#403E43] rounded-full px-6"
-            >
-              Каталог
-            </Button>
+            <AnimatedButton>Выбрать букет</AnimatedButton>
+            <AnimatedButton variant="outline">Каталог</AnimatedButton>
           </div>
         </div>
         <div className="relative">
